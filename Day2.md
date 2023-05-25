@@ -5,7 +5,7 @@
  > 不知道现在找实习还来不来的及。   
  > 经过一周的积极练车，昨天把驾照考出来了！所以机会只会留给有准备的人，所以别松懈！要记住这种感觉
 
-The two algorithms we visited today are  **Two Pointers**.
+The algorithms we visited today are  **Two Pointers**, **Sliding Windows** and **Simulation**.
 
 
 ## [977. Squares of a Sorted Array](https://leetcode.com/problems/squares-of-a-sorted-array/)  
@@ -77,7 +77,7 @@ public boolean fixsw(int size,int[] nums,int target){
 Editorial: [59.螺旋矩阵II](https://programmercarl.com/0059.%E8%9E%BA%E6%97%8B%E7%9F%A9%E9%98%B5II.html#_59-%E8%9E%BA%E6%97%8B%E7%9F%A9%E9%98%B5ii)  
 My Solution: [solution 1](./59.java)
 
-Sample Solution:
+### Approach 1: Traverse Layer by Layer in Spiral Form  
 ```java
 public int[][] generateMatrix(int n) {
     int loop = 0;  // 控制循环次数
@@ -118,6 +118,8 @@ public int[][] generateMatrix(int n) {
 ```
 The sample solution uses four separate for loops to simulate the four sides of the matrix in a spiral manner. It iterates over each side and fills in the values accordingly. However, defining the intervals can be challenging.  
 
+
+### Approach 2: Optimized spiral traversal  
 With my attempt, I use two increments (horizontal and vertical) to define the direction of the writer. I recognize the looping pattern in the turning directions and the relationships between horizontal and vertical increments. I only need to check for bounds and written blocks in this case. I feel like my program is simpler and more sophsicated. 
 
 ### More Problems:
