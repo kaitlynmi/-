@@ -9,7 +9,7 @@ The two algorithms we visited today are  **Two Pointers**.
 
 
 ## [977. Squares of a Sorted Array](https://leetcode.com/problems/squares-of-a-sorted-array/)  
-Editorial: https://programmercarl.com/0977.%E6%9C%89%E5%BA%8F%E6%95%B0%E7%BB%84%E7%9A%84%E5%B9%B3%E6%96%B9.html#%E5%8F%8C%E6%8C%87%E9%92%88%E6%B3%95
+Editorial: [977.有序数组的平方](https://programmercarl.com/0977.%E6%9C%89%E5%BA%8F%E6%95%B0%E7%BB%84%E7%9A%84%E5%B9%B3%E6%96%B9.html#%E5%8F%8C%E6%8C%87%E9%92%88%E6%B3%95)
 
 > 一开始因为昨天的题，一直想从左到右去排序数组。后来看了答案才发现，要找到规律。Two pointer不一定只能用来读写，也可以用从不同的方向来比较参数。从原始的数组里依次找到需要的数,再继续操作
 
@@ -22,7 +22,7 @@ Editorial: [209.长度最小的子数组](https://programmercarl.com/0209.%E9%95
 >不是很熟练。看着solution写的。后续需要回顾
 
 ### Approach: Sliding Window  
-![209]("https://github.com/kaitlynmi/Leetcode-Bootcamp/blob/main/209.gif")  
+![209](./209.gif)  
 A sliding window is achieved by using two pointers `left` and `right`, which point to the starting and ending indices of the subarray. We set them to a value of 0.
 
 To "add" elements to the window, we loop over the array by incrementing `right`. To minimize the array size, we then increment `left` if the sum of the subarray is still larger than `target`.
