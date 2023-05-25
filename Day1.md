@@ -17,15 +17,31 @@ The two algorithms we visited today are **Binary Search** and **Two Pointers**.
 Editorial: https://programmercarl.com/0704.%E4%BA%8C%E5%88%86%E6%9F%A5%E6%89%BE.html#_704-%E4%BA%8C%E5%88%86%E6%9F%A5%E6%89%BE  
 
 > 很熟悉的基础算法了。主要是复健java。后续二刷可以用python写。（顺便学一下md  
-> 不要因为开始简单就飘了哦！
+> 不要因为开始简单就飘了哦！  
+> 有时间对附加题也做个总结。
 
-In the first attempt, i defined the intervals to be [left, right]. (both sides closed; disinclude the all the elements i dont want).
+the main challenge for this question is the definition of intervals, and whether or not to include the ends.
+
+### Approach 1: [`left`, `right`]  
+In the first attempt, i defined the intervals to be [`left`, `right`] 左闭右闭. (both sides closed; disinclude all the elements i dont want).
 
 The only change i made was to check the elements on the two ends along with the piviot point in each loop. I feel like this would decrease the numeber of search time, but the change is minor. 
 
-I also tried definitions like  [left, right).
+### Approach 2: [`left`, `right`) 
+I also tried definitions like  [`left`, `right`) 左闭右开.  
+In this case:
+- `left` and `right` never overlapse.
+- include `middle` when we are choosing to look into the left subarray
 
-### Additional problems completed:   
+### Additional Notes:
+```java
+int mid = left + ((right - left) >> 1);
+int mid = left + ((right - left) / 2);
+```
+These are two ways to devide numbers by two.   
+"`>>`" effectively divides the difference between `right` and `left` by 2 without risking exceeding the maximum value of an int. The "`>>`" operator preserves the sign of the dividend and performs a safe division that reduces the likelihood of overflow in scenarios where the difference is large.
+
+### Additional problems :   
 [34. Find First and Last Position of Element in Sorted Array](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/)  
 [35. Search Insert Position](https://leetcode.com/problems/search-insert-position/)  
 69.x 的平方根  
@@ -34,6 +50,7 @@ I also tried definitions like  [left, right).
 ## [27. Remove Element 移除元素](https://leetcode.com/problems/remove-element/)  
 Editorial: https://programmercarl.com/0027.%E7%A7%BB%E9%99%A4%E5%85%83%E7%B4%A0.html#_27-%E7%A7%BB%E9%99%A4%E5%85%83%E7%B4%A0  
 
+### Approach: Two pointers
 **Two pointers** is the key here. Using a writer pointer and a reader pointer to complete both jobs in one for-loop.
 
 Use System.gc() can save memory space in some occassion. (look into this).
