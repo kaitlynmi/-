@@ -1,5 +1,6 @@
 # LeetCode Bootcamp Day 3  
  with 代码随想录  
+  [Table of Contents](./README.md)  
   [prev](./Day2.md) <--> [next](./Day4.md)
 
 <!-- ### 对自己的话   -->
