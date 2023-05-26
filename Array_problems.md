@@ -1,5 +1,5 @@
 ## [944. Delete Columns to Make Sorted](https://leetcode.com/problems/delete-columns-to-make-sorted/)  
-My Solution: [solution](./944.java)
+My Solution: [approach 1](./944.java) / [approach 2](./944_2.java)
 
 ### Approach 1: Brute force (row -> column)
 - Initialize a boolean array columnFlag with a length of nColumns. Each index represents a column, and initially, all columns are considered sorted (marked as false).
