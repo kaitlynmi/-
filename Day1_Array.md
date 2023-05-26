@@ -56,8 +56,8 @@ int mid = left + ((right - left) / 2);
 "`>>`" effectively divides the difference between `right` and `left` by 2 without risking exceeding the maximum value of an int. The "`>>`" operator preserves the sign of the dividend and performs a safe division that reduces the likelihood of overflow in scenarios where the difference is large.
 
 ### Additional problems :   
-[34. Find First and Last Position of Element in Sorted Array](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/)  
-[35. Search Insert Position](https://leetcode.com/problems/search-insert-position/)  
+[34. Find First and Last Position of Element in Sorted Array](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/)  :heavy_check_mark:  
+[35. Search Insert Position](https://leetcode.com/problems/search-insert-position/):heavy_check_mark:  
 69.x 的平方根  
 367.有效的完全平方数
 

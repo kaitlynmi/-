@@ -75,7 +75,7 @@ public boolean fixsw(int size,int[] nums,int target){
 
 ## [59. Spiral Matrix II](https://leetcode.com/problems/spiral-matrix-ii/)  
 Editorial: [59.螺旋矩阵II](https://programmercarl.com/0059.%E8%9E%BA%E6%97%8B%E7%9F%A9%E9%98%B5II.html#_59-%E8%9E%BA%E6%97%8B%E7%9F%A9%E9%98%B5ii)  
-My Solution: [solution 1](./59.java)
+My Solution: [optimized solution](./59.java)
 
 ### Approach 1: Traverse Layer by Layer in Spiral Form  
 ```java
