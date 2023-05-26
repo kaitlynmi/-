@@ -1,5 +1,6 @@
 # LeetCode Bootcamp Day 2  
  with 代码随想录  
+ [prev](./Day1.md) <--> [next](./Day3.md)
 
 ### 对自己的话  
  > 不知道现在找实习还来不来的及。   

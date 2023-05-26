@@ -1,5 +1,6 @@
 # LeetCode Bootcamp Day n  
  with 代码随想录  
+  [prev](./Day.md) <--> [next](./Day.md) 
 
 ### 对自己的话  
  >

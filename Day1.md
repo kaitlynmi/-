@@ -1,5 +1,6 @@
 # LeetCode Bootcamp Day 1  
  with 代码随想录  
+ prev <--> [next](./Day2.md)
 
 ### 对自己的话  
  >无谓的等待是不会有任何的结果的。就算再害怕失败也要动起来。   
