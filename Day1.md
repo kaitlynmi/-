@@ -70,7 +70,7 @@ Editorial: https://programmercarl.com/0027.%E7%A7%BB%E9%99%A4%E5%85%83%E7%B4%A0.
 Use System.gc() can save memory space in some occassion. (look into this).
 
 ### Additional problems :   
-[26. Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/)  
+[26. Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/):heavy_check_mark:  
 283.移动零  
 844.比较含退格的字符串  
 977.有序数组的平方  
