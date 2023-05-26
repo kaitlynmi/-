@@ -15,7 +15,7 @@ Editorial: [977.有序数组的平方](https://programmercarl.com/0977.%E6%9C%89
 
 > 一开始因为昨天的题，一直想从左到右去排序数组。后来看了答案才发现，要找到规律。Two pointer不一定只能用来读写，也可以用从不同的方向来比较参数。从原始的数组里依次找到需要的数,再继续操作
 
-### Approach: Two pointers  
+### Approach: Two pointers  :star:
 The largest square are always at the two ends of the array. We have to compare the values at two ends with two pointers, and gradually narrowing the array to the middle.
 
 
@@ -24,7 +24,7 @@ Editorial: [209.长度最小的子数组](https://programmercarl.com/0209.%E9%95
 My Solution: [O(n) solution](./209_O(n).java)/[O(nlogn) solution](./209_O(nlog).java)
 >不是很熟练。看着solution写的。后续需要回顾
 
-### Approach: Sliding Window  
+### Approach: Sliding Window  :star:
 ![209](./209.gif)  
 A sliding window is achieved by using two pointers `left` and `right`, which point to the starting and ending indices of the subarray. We set them to a value of 0.
 
@@ -78,6 +78,8 @@ public boolean fixsw(int size,int[] nums,int target){
 ## [59. Spiral Matrix II](https://leetcode.com/problems/spiral-matrix-ii/)  
 Editorial: [59.螺旋矩阵II](https://programmercarl.com/0059.%E8%9E%BA%E6%97%8B%E7%9F%A9%E9%98%B5II.html#_59-%E8%9E%BA%E6%97%8B%E7%9F%A9%E9%98%B5ii)  
 My Solution: [optimized solution](./59.java)
+
+> 虽然自己写出来了更好的解法，但是对于基本解法里的定义要再熟悉一下
 
 ### Approach 1: Traverse Layer by Layer in Spiral Form  
 ```java

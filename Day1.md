@@ -37,7 +37,7 @@ In this case:
 - include `middle` when we are choosing to look into the left subarray
 
 ### Additional Notes:
-BINARY SEARCH
+BINARY SEARCH :star:
 -  The essence of binary search is to narrow down the range of the answer based on whether it satisfies the conditions of the problem. 
 -  It requires the array to be **sorted**.  
 - The key advantage of binary search is its time complexity of** O(logn)**. Consider using it when encountering a sorted array.  
