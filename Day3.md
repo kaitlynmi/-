@@ -8,7 +8,7 @@
 
 ### KEY POINTS
 
-The  algorithms we visited today are **Sentinel Node** and **2**.
+The  algorithms we visited today is **Sentinel Node** .
 
 
 ## [203. Remove Linked List Elements](https://leetcode.com/problems/remove-linked-list-elements/)  
@@ -60,20 +60,18 @@ TBC
 
 
 ## [206. Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/)  
-Editorial: [206.反转链表](https://programmercarl.com/0206.%E7%BF%BB%E8%BD%AC%E9%93%BE%E8%A1%A8.html#%E5%8F%8C%E6%8C%87%E9%92%88%E6%B3%95)
+Editorial: [206.反转链表](https://programmercarl.com/0206.%E7%BF%BB%E8%BD%AC%E9%93%BE%E8%A1%A8.html#%E5%8F%8C%E6%8C%87%E9%92%88%E6%B3%95)  
+Solution: [iterative](./206.java)
 
 > 
 
+### Approach 1: Iterative (Two Ponters)
+The line `LinkedNode node = head;` assigns the value of `head` to the variable `node`. However, it's important to note that this assignment **does not create a new object or copy the object's data**. Instead, it creates a new reference `node` that points to the same object in memory as `head`.
 
-### Approach 1: 
+As a result, both `head` and `node` are referring to the same object in memory. Any changes made to the object through one variable will be reflected when accessing the object through the other variable. This behavior occurs because objects in Java are reference types, and assigning an object to a variable simply copies the reference to the object, not the actual object data.
 
+### Approach 2: Recursive
+TBC
 
-### Approach 2: 
-
-
-### Additional Notes:
-
-
-### Additional problems :   
 
 
