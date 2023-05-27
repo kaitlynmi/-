@@ -11,8 +11,9 @@
 The  algorithms we visited today are **1** and **2**.
 
 
-## [q1]()  
-Editorial: []()
+## [q]()  
+Editorial: []()  
+Solution: [Solution](./)  
 
 > 
 
