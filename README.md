@@ -1,5 +1,5 @@
 ## This is my journey conquering LeetCode :computer:
-~by kaitlynmi
+~by kaitlynmi ~ starting at 5/24/2023
 
 Table of Content: 
 
@@ -10,8 +10,10 @@ Table of Content:
 | | [Array Practices](./Array_problems.md) | | 34, 944, (35, 69, 367, 26, 283, 844, 977)|
 | Day 3 | [Day3.md](./Day3.md) | LinkedList 1/2| 203:white_check_mark:, 707:heavy_exclamation_mark:, 206::white_check_mark: |
 | Day 4 | [Day4.md](./Day4.md) | LinkedList 2/2 | 24:white_check_mark:, 19:heavy_check_mark: , 160:x:, 142:x: |
-| | [LinkedList Practices](./LinkedList_problems.md) | | |
-| Day 5 | [Day5.md](./Day5.md) | HashTable | |
+| Day 5 | [LinkedList Practices](./LinkedList_problems.md) | Review | |
+| Day 6 | [Day6.md](./Day6.md) | HashTable | |
+| Day 7 |  |  | |
+| Day 8 |  |  | |
 
 Notations:  
 :white_check_mark: : Understood    

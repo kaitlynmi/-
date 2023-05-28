@@ -63,16 +63,44 @@ Iterate once to find size L of the list. iterate twice to remove the `(L−n+1)`
 
 ## [160. Intersection of Two Linked Lists](https://leetcode.com/problems/intersection-of-two-linked-lists/)  
 Editorial: []()  
-Solution: [Solution](./)  
+Solution: [Two Pointers](./LC160_twoPointer.java)/Hashtable  
 
-> 
-
-
-### Approach 1: 
+> 要注意观察input里的规律和规则。这道题就是要找两个list末尾处相等的地方。那length不一的部分就可以无视。  
+> 比较两个node可以时候可以直接比较地址，来确定两个reference指向的是不是同一个节点
 
 
-### Approach 2: 
+### Approach 1: Two Pointers
+1. Calculate N; the length of list A.
+2. Calculate M; the length of list B.
+3. Set the start pointer for the longer list.
+4. Step the pointers through the list together.  
 
+Time complexity : O(N+M)  
+Space complexity : O(1)  
+
+### Approach 2: Simplied Two Pointers
+If we say that c is the shared part, a is exclusive part of list A and b is exclusive part of list B, then we can have one pointer that goes over a + c + b and the other that goes over b + c + a.
+```java
+public ListNode getIntersectionNode(ListNode headA, ListNode headB) {
+        ListNode pA = headA;
+        ListNode pB = headB;
+        while (pA != pB) {
+            pA = pA == null ? headB : pA.next;
+            pB = pB == null ? headA : pB.next;
+        }
+        return pA;
+    }
+```
+Note: In the case lists do not intersect, the pointers for A and B
+    will still line up in the 2nd iteration, just that here won't be
+    a common node down the list and both will reach their respective ends
+    at the same time. So pA will be NULL in that case.
+
+### Approach 3: Hashtable
+Time complexity : O(N+M).  
+Space complexity : O(M).  
+More sufficient solution
+TBC
 
 ## [142. Linked List Cycle II](https://leetcode.com/problems/linked-list-cycle-ii/)  
 Editorial: [142.环形链表II](https://programmercarl.com/0142.%E7%8E%AF%E5%BD%A2%E9%93%BE%E8%A1%A8II.html)  
