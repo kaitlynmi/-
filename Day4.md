@@ -109,9 +109,28 @@ Solution: [Solution](./)
 > 
 
 
-### Approach 1: 
+### Approach 1: HashTable
+```java
+public ListNode detectCycle(ListNode head) {
+    Set<ListNode> visited = new HashSet<ListNode>();
 
+    ListNode node = head;
+    while (node != null) {
+        if (visited.contains(node)) {
+            return node;
+        }
+        visited.add(node);
+        node = node.next;
+    }
 
-### Approach 2: 
+    return null;
+}
+```
+Remembering every node we encoutered, and returns a node when we find a duplicate.
+
+Time and space complexity: O(n)
+
+### Approach 2: 2 pointers (龟兔赛跑)
+>很多数学细节， 后面再看视频过一遍写笔记
 
 
